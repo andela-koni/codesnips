@@ -1,0 +1,7 @@
+<h1>Snippets</h1>
+<p><%= link_to "Add a snippet", new_snippet_url %></p>
+<ul>
+  <% @snippets.each do |snippet| %>
+    <li><%= link_to snippet.title, snippet_url(snippet) %></li>
+  <% end %>
+</ul>

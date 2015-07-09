@@ -1,0 +1,6 @@
+<h1><%= @snippet.title %></h1>
+<div><%= @snippet.content %></div>
+<p><%= link_to "all", snippets_url %></p>
+<p><%= link_to "edit", edit_snippet_url(@snippet) %></p>
+<p><%= link_to "delete", snippet_url(@snippet), method: :delete %></p>
+
